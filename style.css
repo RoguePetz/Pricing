@@ -65,6 +65,7 @@ body{
 
     .navbar-links{
         display: none;
+        color: red;
         width: 100%;
     }
     .navbar{
