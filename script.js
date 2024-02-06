@@ -1,6 +1,15 @@
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+/*Hamburger menu functionality*/ 
 
-toggleButton.addEventListener('click', () =>{
-    navbarLinks.classList.toggle('active')
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () =>{
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
 })
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () =>{
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+
+}))
