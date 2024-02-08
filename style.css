@@ -30,7 +30,9 @@ a{
     gap: 60px;
 }
 .nav-branding{
-    font-size: 2rem;
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
 }
 .nav-link{
     transition: 0.7s ease;
@@ -55,6 +57,7 @@ a{
 .dashboard{
     margin-top: 20px;
     margin-left: 10px;
+    margin-bottom: 20px;
     font-weight: 900;
     font-size: large;
 }
@@ -72,6 +75,7 @@ a{
     padding: 10px;
     width: 200px;
     margin: 16px;
+    border-radius: 5px;
 }
 .crypto-name{
     font-weight: 900;
