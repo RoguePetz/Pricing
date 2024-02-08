@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 header{
@@ -50,9 +52,15 @@ a{
     background-color: white;
 
 }
+.dashboard{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-weight: 900;
+    font-size: large;
+}
 .crypt-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .crypto{
@@ -62,7 +70,16 @@ a{
     background-color: #fff;
     box-shadow: 0 2px 5px #ccc;
     padding: 10px;
+    width: 200px;
     margin: 16px;
+}
+.crypto-name{
+    font-weight: 900;
+}
+.crypt-profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 @media (max-width:500px){
