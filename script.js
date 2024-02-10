@@ -5,10 +5,10 @@ let ws2 = new WebSocket('wss://stream.binance.com:9443/ws/btceur@trade');
 let ws3 = new WebSocket('wss://stream.binance.com:9443/ws/ltceur@trade');
 let ws4 = new WebSocket('wss://stream.binance.com:9443/ws/bnbeur@trade');
 
-let btc = document.getElementById("bitcoion");
+let btc = document.getElementById("bitcoin");
 let eth = document.getElementById("ethereum");
 let ltc = document.getElementById("litecoin");
-let bnb = document.getElementById("bogecoin");
+let bnb = document.getElementById("binancecoin");
 
 
 ws.onmessage = (event) => {
