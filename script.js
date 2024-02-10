@@ -1,14 +1,12 @@
 /*Set up for coingeckoAPI*/
 
+let ws = new WebSocket('wss://stream.binance.com:9443/ws/etheur@trade');
+let btc = document.getElementById("bitcoin");
 
-const fetchData = async () => {
-    const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Clitecoin%2Cdogecoin&vs_currencies=usd');
-    const data = await response.json();
-    return data;
+ws.onmessage = (event) => {
+    let stockObject = JSON.parse(event.data);
+    btc.innerText = parseFloat(stockObject.p).toFixed(2);
 }
-
-fetchData()
-    .then(data => console.log('resolved:', data));
 
 
 /*Hamburger menu functionality*/ 
