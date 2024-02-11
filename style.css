@@ -7,13 +7,15 @@
 }
 
 header{
-    background-color: #262626;
+    background-color: white;
+    box-shadow: 0 2px 5px #565656;
+    z-index: 2;
 }
 li{
     list-style: none;
 }
 a{
-    color: white;
+    color: black;
     text-decoration: none;
 }
 .navbar{
@@ -38,7 +40,7 @@ a{
     transition: 0.7s ease;
 }
 .nav-link:hover{
-    color: dodgerblue;
+    color: #83C0C1;
 }
 .hamburger{
     display: none;
@@ -51,9 +53,31 @@ a{
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: white;
+    background-color: black;
 
 }
+.intro{
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    background-color: #83C0C1;
+}
+.intro-content{
+    
+}
+.intro-title{
+    display: flex;   
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.intro-explain{
+    display: flex;   
+    justify-content: center;
+}
+
+
 .dashboard{
     margin-top: 20px;
     margin-left: 10px;
@@ -107,7 +131,7 @@ a{
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color: #262626;
+        background-color: white;
         border-bottom-right-radius: 25px;
         border-bottom-left-radius: 25px;
         width: 100%;
@@ -120,6 +144,10 @@ a{
     }
     .nav-menu.active{
         left: 0;
+    }
+    .banner{
+        width: 100%;
+        height: auto;
     }
 
     .crypto{
