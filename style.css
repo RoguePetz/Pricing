@@ -109,6 +109,14 @@ a{
     justify-content: space-between;
     align-items: center;
 }
+footer{
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    box-shadow: 0 2px 5px #6c6c6c;
+}
 
 @media (max-width:500px){
     .hamburger{
@@ -145,10 +153,9 @@ a{
     .nav-menu.active{
         left: 0;
     }
-    .banner{
-        width: 100%;
-        height: auto;
-    }
+   .intro{
+    height: 300px;
+   }
 
     .crypto{
         width: 200px;
